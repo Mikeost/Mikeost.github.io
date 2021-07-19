@@ -1,0 +1,113 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mikeost's modules</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+</head>
+<body>
+	<div class="banner">
+		<video autoplay muted loop>
+			<source src="media/loop80s.mp4" type="video/mp4">
+		</video>
+
+		<div class="content">
+			<h1>Mikeost's modules</h1>
+			<section>
+			<div class="block1">
+				<img src="media/lox.jpg">
+				<hr width="295">
+				<div class="text">
+				<span id="time">####.##.## ##:##</span>
+			<script>
+			    function updateTime() {
+			        var timeBlock = document.getElementById("time");
+			        var date = new Date();
+
+			        var monts = ((date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1));
+			        var days = (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+
+			        var hours = (date.getHours() < 10 ? "0" + date.getHours() : date.getHours());
+			        var minutes = (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
+			        var seconds = (date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds());
+
+			        timeBlock.innerHTML = days + "." + monts + "." + date.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
+			    }
+
+			    updateTime();
+			    setInterval(updateTime, 500);
+			</script>
+		</div>
+				<hr width="295">
+				<h2>userbot modules</h2>
+				<hr width="295">
+				<button type="button1" onClick="window.open('modules/rtts.py');">rtts</button>
+				<hr width="295">
+			<p align="center">
+				<button type="button1" onClick="document.location='index.html';">back</button>
+			</p>
+			</div>
+		</section>
+		<audio autoplay="" id="myaudio" loop="">
+			<source src="media/8bit.mp3" type="audio/mp3">
+		</audio>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mikeost's modules</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+</head>
+<body>
+	<div class="banner">
+		<video autoplay muted loop>
+			<source src="media/loop80s.mp4" type="video/mp4">
+		</video>
+
+		<div class="content">
+			<h1>Mikeost's modules</h1>
+			<section>
+			<div class="block1">
+				<img src="media/lox.jpg">
+				<hr width="295">
+				<div class="text">
+				<span id="time">####.##.## ##:##</span>
+			<script>
+			    function updateTime() {
+			        var timeBlock = document.getElementById("time");
+			        var date = new Date();
+
+			        var monts = ((date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1));
+			        var days = (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+
+			        var hours = (date.getHours() < 10 ? "0" + date.getHours() : date.getHours());
+			        var minutes = (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
+			        var seconds = (date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds());
+
+			        timeBlock.innerHTML = days + "." + monts + "." + date.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
+			    }
+
+			    updateTime();
+			    setInterval(updateTime, 500);
+			</script>
+		</div>
+				<hr width="295">
+				<h2>userbot modules</h2>
+				<hr width="295">
+				<button type="button1" onClick="window.open('modules/rtts.py');">rtts</button>
+				<hr width="295">
+			<p align="center">
+				<button type="button1" onClick="document.location='main.html';">back</button>
+			</p>
+			</div>
+		</section>
+		<audio autoplay="" id="myaudio" loop="">
+			<source src="media/8bit.mp3" type="audio/mp3">
+		</audio>
+</body>
+</html>
+>>>>>>> e6bfec098af8ea4a71631070d75fb888ba017f98
