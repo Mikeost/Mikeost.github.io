@@ -43,6 +43,6 @@ async def _(event):
              await event.delete()
              alexoNewMessage =  await event.client.send_message(event.chat_id, response.message) 
              await event.client.edit_message(event.chat_id, alexoNewMessage, '.')
-             await event.client.send_message(event.chat_id, "```Вирусы(нет) и доп. модули ```"  + "              ▬@mikeostdev▬") 
+             await event.client.send_message(event.chat_id, "```Вирусы(нет) и доп. модули\n```"  + "                  ▬ @mikeostdev ▬\n" + "                ▬ www.mikeost.tk ▬") 
 
 	
