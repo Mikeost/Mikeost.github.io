@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 body{
 	background-size: cover;
+	background-color: black;
 	margin: 0;
 	padding: 0;
 	font-family: 'Rowdies', sans-serif;
@@ -49,7 +50,7 @@ body{
 }
 .block1{
 	border-radius: 1.5em;
-    border: blueviolet solid 1px;
+    border: lightblue solid 1px;
 	max-width: 5999px;
 	padding: 50px;
 	background: rgba(255,255,255,.2);
@@ -59,7 +60,7 @@ img{
 	width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: blueviolet solid 2px;
+    border: lightblue solid 2px;
 }
 
 button{
@@ -67,7 +68,7 @@ button{
 	cursor: pointer;
 	background-color: rgba(12,12,12,.65);
 	font-family: monospace;
-	border-color: blueviolet;
+	border-color: lightblue;
 	border-width: 1px;
 	min-width: 150px;
     width: 150px;
@@ -80,7 +81,7 @@ button{
 }
 button:hover{
 	background: #fff6;
-    color: blueviolet;
+    color: lightblue;
 }
 hr{
 	border: none;
