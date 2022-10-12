@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
 body{
 	background-size: cover;
 	background-color: black;
 	margin: 0;
 	padding: 0;
-	font-family: 'Rowdies', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #ffffff;
 } 
 .updateTime{
@@ -39,9 +38,10 @@ body{
 {
 	margin: 0;
 	padding: 0;
-	font-size: 4.5em;
+	font-size: 3.5em;
 	text-transform: uppercase;
 	color: #fff;
+	text-shadow: 1px 1px 20px #000000;
 }
 .banner .content p
 {
@@ -50,25 +50,26 @@ body{
 }
 .block1{
 	border-radius: 1.5em;
-    border: lightblue solid 1px;
+    border: rgb(122,164,201) solid 1px;
 	max-width: 5999px;
-	padding: 50px;
-	background: rgba(255,255,255,.2);
+	padding: 60px;
+	background: rgba(255,255,255,.15);
 	box-shadow: 0 5px 15px rgba(0,0,0.5);
 }
 img{
 	width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: lightblue solid 2px;
+    border: rgb(122,164,201) solid 1px;
+    box-shadow: 1px 1px 20px 0px #000000;
 }
 
 button{
 	color: White;
 	cursor: pointer;
 	background-color: rgba(12,12,12,.65);
-	font-family: monospace;
-	border-color: lightblue;
+	font-family: 'Poppins';
+	border: rgb(122,164,201) solid 1px;
 	border-width: 1px;
 	min-width: 150px;
     width: 150px;
@@ -81,7 +82,8 @@ button{
 }
 button:hover{
 	background: #fff6;
-    color: lightblue;
+    color: rgb(24,50,74);
+    font-family: 'Poppins';
 }
 hr{
 	border: none;
@@ -89,20 +91,21 @@ hr{
 	margin-top: 5px;
 }
 h2{
-	font-family: consolas;
+	font-family: 'Poppins';
 	color: white;
 	overflow: hidden;
 	white-space: nowrap;
+	text-shadow: 1px 1px 20px #000000;
 }
 span#title {
 	font-size: 24px;
 	font-weight: bold;
-	text-shadow: 0px 0px 2px #000000;
+	text-shadow: 1px 1px 20px #000000;
 	color:white;
 }
 
 span#time {
 	font-size: 16px;
-	text-shadow: 0px 0px 4px #000000;
+	text-shadow: 1px 1px 20px #000000;
 }
 
