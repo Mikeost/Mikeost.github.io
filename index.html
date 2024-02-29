@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link rel="icon" href="media/appleLogo.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-	<title>Mikeost</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
-</head>
-<body>
-	<div class="banner">
-		<div class="content">
-			<section>
-			<div class="block1">
-				<img src="media/Mike.jpg">
-				<h1>Mikeost</h1>
-				<hr width="295">
-				<div class="text">
-				<span id="time">####.##.## ##:##</span>
-			<script>
-			    function updateTime() {
-			        var timeBlock = document.getElementById("time");
-			        var date = new Date();
-
-			        var monts = ((date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1));
-			        var days = (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
-
-			        var hours = (date.getHours() < 10 ? "0" + date.getHours() : date.getHours());
-			        var minutes = (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
-			        var seconds = (date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds());
-
-			        timeBlock.innerHTML = days + "." + monts + "." + date.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
-			    }
-
-			    updateTime();
-			    setInterval(updateTime, 500);
-			</script>
-		</div>
-				<hr width="295">
-				<h2>Links</h2>
-                <hr width="295">
-                <button type="button1" onClick="window.open('https://www.linkedin.com/in/mikhail-ostashchenko/');">LinkedIn</button>
-				<hr width="295">
-				<button type="button2" onclick="window.open('https://github.com/Mikeost');">Github</button>
-				<hr width="295">
-				<button type="button3" onclick="window.open('https://www.e-olymp.com/ru/users/mikeost');">E-Olymp</button>
-				<hr width="295">
-				<button type="button4" onclick="window.open('https://leetcode.com/Mikeost/');">LeetCode</button>
-				<hr width="295">
-			</div>
-		</section>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <link rel="icon" href="media/favicon.ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <title>Mikeost</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <div class="banner">
+      <div class="content">
+      <section>
+         <div class="block1">
+            <img src="media/image.jpg">
+            <h2>Mykhailo Ostashchenko</h2>
+            <h3>Software Engineer</h3>
+            <hr width="295">
+            <div class="text">
+               <span id="time">####.##.## ##:##</span>
+               <script>
+                  function updateTime() {
+                      var timeBlock = document.getElementById("time");
+                      var date = new Date();
+                  
+                      var monts = ((date.getMonth() + 1) < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1));
+                      var days = (date.getDate() < 10 ? "0" + date.getDate() : date.getDate());
+                  
+                      var hours = (date.getHours() < 10 ? "0" + date.getHours() : date.getHours());
+                      var minutes = (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
+                      var seconds = (date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds());
+                  
+                      timeBlock.innerHTML = days + "." + monts + "." + date.getFullYear() + " " + hours + ":" + minutes + ":" + seconds;
+                  }
+                  
+                  updateTime();
+                  setInterval(updateTime, 500);
+               </script>
+            </div>
+            <hr width="295">
+            <h2>Links</h2>
+            <hr width="295">
+            <button type="button1" onClick="window.open('https://www.linkedin.com/in/mikhail-ostashchenko/');">LinkedIn</button>
+            <hr width="295">
+            <button type="button2" onclick="window.open('https://github.com/Mikeost');">Github</button>
+            <hr width="295">
+            <button type="button3" onclick="window.open('https://www.e-olymp.com/ru/users/mikeost');">E-Olymp</button>
+            <hr width="295">
+            <button type="button4" onclick="window.open('https://leetcode.com/Mikeost/');">LeetCode</button>
+            <hr width="295">
+         </div>
+      </section>
+   </body>
 </html>
