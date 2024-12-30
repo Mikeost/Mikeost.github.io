@@ -13,7 +13,9 @@
       <title>Mikeost</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
    </head>
-   <body>
+   <body class="light-theme">
+      <div id="stars-container"></div>
+      <script src="scripts/stars.js"></script>
       <div class="banner">
          <div class="content">
             <section>
@@ -50,9 +52,31 @@
                       <button type="button3" onclick="window.open('https://www.e-olymp.com/ru/users/mikeost');">E-Olymp</button>
                       <button type="button4" onclick="window.open('https://leetcode.com/Mikeost/');">LeetCode</button>
                   </div>
+                  <div class="toggle-switch">
+                     <label class="switch-label">
+                       <input type="checkbox" class="checkbox" id="themeSwitcher">
+                       <span class="slider"></span>
+                     </label>
+                  </div>  
                </div>
             </section>
          </div>
       </div>
+      <script>
+         document.addEventListener("DOMContentLoaded", () => {
+            const toggleSwitch = document.querySelector(".checkbox");
+            const body = document.body;
+
+            body.classList.add("dark-theme");
+
+            toggleSwitch.addEventListener("change", () => {
+               if (toggleSwitch.checked) {
+                     body.classList.remove("dark-theme");
+                 } else {
+                     body.classList.add("dark-theme");
+                 }
+            });
+         });
+    </script>
    </body>
 </html>

@@ -18,12 +18,12 @@
 
 body {
 	font-family: 'e-Ukraine', sans-serif;
+	font-weight: bold;
+	overflow: hidden;
 	background-size: cover;
-	background-color: white;
 	background-position: center;
 	margin: 0;
 	padding: 0;
-	color: black;
 	min-height: 100vh;
 	background-image: linear-gradient(217deg, rgba(255,0,0,0.6), rgba(255,0,0,0) 50.71%), linear-gradient(127deg, rgba(0,255,0,0.6), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,0.6), rgba(0,0,255,0) 70.71%);
 	background-size: 150% 150%;
@@ -32,6 +32,68 @@ body {
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
+}
+
+body.light-theme {
+    background-color: white;
+    color: black;
+}
+
+body.dark-theme {
+    background-color: black;
+    color: white;
+    background-image: radial-gradient(1px 1px at 10% 5%, #ffffff, transparent), 
+        radial-gradient(1px 1px at 20% 15%, #ffffff, transparent),
+        radial-gradient(1px 1px at 30% 25%, #ffffff, transparent),
+        radial-gradient(1px 1px at 40% 35%, #ffffff, transparent),
+        radial-gradient(1px 1px at 50% 45%, #ffffff, transparent),
+        radial-gradient(1px 1px at 60% 55%, #ffffff, transparent),
+        radial-gradient(1px 1px at 70% 65%, #ffffff, transparent),
+        radial-gradient(1px 1px at 80% 75%, #ffffff, transparent),
+        radial-gradient(2px 2px at 90% 85%, #ffffff, transparent),
+        radial-gradient(1px 1px at 75% 35%, #ffffff, transparent),
+        radial-gradient(1px 1px at 85% 50%, #ffffff, transparent),
+        radial-gradient(1px 1px at 95% 70%, #ffffff, transparent),
+        radial-gradient(1px 1px at 25% 40%, #ffffff, transparent),
+        radial-gradient(3px 3px at 50% 50%, #ffffff, transparent),
+        radial-gradient(2px 2px at 30% 20%, #ffffff, transparent),
+        radial-gradient(1.5px 1.5px at 65% 80%, #ffffff, transparent),
+        radial-gradient(2px 2px at 45% 60%, #ffffff, transparent),
+        radial-gradient(1px 1px at 5% 10%, #ffffff, transparent);
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: starsMove 60s linear infinite;
+}
+
+body.light-theme .star {
+    display: none;
+}
+
+body.dark-theme .star {
+    display: block;
+}
+
+@keyframes starsMove {
+    from {
+        background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+    }
+    to {
+        background-position: 100px 100px, -100px -100px, 50px 50px, -50px -50px, 0 0, 20px -20px, -50px 50px, 10px -10px, -30px -30px;
+    }
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: starTwinkle 2s ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
 }
 
 .updateTime {
@@ -133,14 +195,6 @@ button:hover {
 	50% { background-position: 100% 100%; }
 }
 
-h2, h3 {
-	font-weight: bold;
-	color: black;
-	overflow: hidden;
-	white-space: nowrap;
-	margin: 10px 0;
-}
-
 span#time {
 	font-weight: thin;
 	font-size: 16px;
@@ -161,4 +215,72 @@ span#time {
 	h2, h3 {
 		font-size: 1.0em;
 	}
+}
+
+.toggle-switch {
+  	position: relative;
+  	width: 80px;
+  	height: 40px;
+  	margin: 20px auto;
+  	--light: #d8dbe0;
+  	--dark: #000;
+  	--link: rgb(27, 129, 112);
+  	--link-hover: rgb(24, 94, 82);
+  	justify-content: center;
+}
+
+.switch-label {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: var(--dark);
+	border-radius: 30px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--dark);
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+  	position: absolute;
+  	width: 100%;
+  	height: 100%;
+  	border-radius: 30px;
+  	-webkit-transition: 0.3s;
+  	transition: 0.3s;
+  	background-color: var(--dark);
+}
+
+.checkbox:checked ~ .slider {
+  	background-color: var(--light);
+}
+
+.slider::before {
+  	content: "";
+  	position: absolute;
+  	top: 7px;
+  	left: 7px;
+  	width: 26px;
+  	height: 26px;
+  	border-radius: 50%;
+  	-webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+  	box-shadow: inset 12px -4px 0px 0px var(--light);
+  	background-color: var(--dark);
+  	-webkit-transition: 0.3s;
+  	transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+  	-webkit-transform: translateX(40px);
+  	-ms-transform: translateX(40px);
+  	transform: translateX(40px);
+  	background-color: var(--dark);
+  	-webkit-box-shadow: none;
+  	box-shadow: none;
 }
